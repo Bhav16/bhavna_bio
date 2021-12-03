@@ -55,10 +55,20 @@ h1 {
 }
 
 .row {
-  margin: 8px -16px;
+  display: table;
+  width: 100%;
+
 }
 
 .row h2{
+  text-align: center;
+}
+.dev{
+  align-items: center;
+  margin-right: 70px;
+}
+
+.dev h3{
   text-align: center;
 }
 

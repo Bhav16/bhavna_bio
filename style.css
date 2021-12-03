@@ -1,185 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
- body {
-  background-image: url(https://images.unsplash.com/photo-1508968419-73cca394e8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-  font-family: 'Open Sans', sans-serif;
-  background-position: center;
-  background-repeat: no-repeat;
+body {
+  color: #333;
+}
+
+
+.banner {
   background-size: cover;
-  color: #000;
-  font-size: 18px;
-  line-height: 1.6;
+  background-position: center;
+  padding: 150px 0;
 }
 
-img {
-  border-radius: 45%;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
-h1, h2 {
-  font-family: 'Roboto', sans-serif;
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+body {
+  background-color: #c4c1c1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
 }
 
 h1 {
-  color: black;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 50px;
 }
 
-h2 {
-  color: rgb(48, 46, 46);
-  font-size: 25px;
-  font-weight: 500;
+.row {
+  margin: 8px -16px;
 }
 
-a {
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 16px;
+.row h2{
+  text-align: center;
 }
 
-.btn-grey {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
-  padding: 10px 25px;
-  margin: 15px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-  box-shadow: 5px 5px #2e2d2d;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+.row > .column {
+  padding: 8px;
 }
 
-.btn-grey:hover {
-   opacity: 1;
+.column {
+  float: left;
+  width: 25%;
 }
 
-a:hover{
-   color: rgb(10, 10, 10);
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.container {
-  width: 600px;
-  margin: 30px auto;
-}
-
-.card-beige {
-  background-color: #b1a9a5;
-  padding: 30px;
-  box-shadow: 0px 20px 30px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  margin: 20px 0px;
-
-}
-
-.text-align {
-text-align: center;
-}
-
-
-.link{
-margin: 50px;
-}
-
-.footer {
-  background: #b1a9a5;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  width: 450px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+.content {
+  background-color: #333;
+  padding: 10px;
+  color: white;
   border-radius: 10px;
-  margin-left: 350px;
 }
-.footer-links {
+
+.content img{
+  border-radius: 25px;
+}
+
+.content-head{
   display: flex;
-  align-items: center;
-  padding: 200px;
-}
-
-.footer-links a {
-  color: rgb(10, 10, 10);
-  opacity: 0.10;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
-}
-
-.footer-name{
-  color: rgb(43, 42, 42);
-}
-
-.project {
-  overflow: hidden;
-  height: 120px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  padding: 15px;
+  justify-content: center;
+  padding:30px;
   margin: 15px;
+  background-color: #333;
+  border-radius: 20px;
 }
 
-
-.project h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+.content-head p{
+  margin: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #CCCADC;
+  border-radius: 10px;
+  width: 100%;
+  height: 90px;
+  padding: 8px 5px 8px 5px;
 }
 
-.project p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+.para{
+  padding: 15px;
 }
 
-.project .project-info {
-  padding: 16px;
-}
-
-button {
-    display: inline-block;
-    height: 134px;
-    padding: 0;
-    margin: 0;
-    width: 104px;
-}
-
-#close-image img {
-    display: block;
-    height: 130px;
-    width: 100px;
-}
-
-.project img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
+.title{
+  margin-top: 20px;
 }

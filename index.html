@@ -12,9 +12,9 @@
 
 <body>
 
-<div class="banner"
-  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1612740393489-c07577fd55a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
-</div>
+  <div class="banner"
+    style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1612740393489-c07577fd55a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
+  </div>
 
 
   <div class="navbar">
@@ -25,13 +25,15 @@
 
   </div>
 
-    <div class="title">
-      <h3>About Me</h3>
-    </div>
+  <div class="title">
+    <h1>About Me</h1>
+  </div>
+
   <div class="content-head">
-    <div class="">
+    <div class="image">
       <img src="images/bhavna.jpg" alt="image" style="width:100px" >
     </div>
+
     <div class="para">
       <p>"Hi, my name is Bhavna Basenoo. I have a bachelor degree in Communication, Media and Journalism. I was always
       interested in the coding world,so after my degree,
@@ -42,31 +44,41 @@
     </div>
   </div>
 
-  <div class="row">
-    <h2>My Projects</h2>
-    <div class="column">
-      <div class="content">
-        <a href="https://rent-island.herokuapp.com/"><img src="images/Capture.PNG" alt="rentanisland" style="width:100%"></a>
-        <h3>Rent An Island</h3>
-        <p></p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="content">
-        <a href="https://easy-trip-app.herokuapp.com/"><img src="images/Capture1.PNG" alt="easytrip" style="width:100%"></a>
-        <h3>EasyTrip</h3>
-        <p>Get ready to live your best life !</p>
-      </div>
-    </div>
-  </div>
-
-    <div class="dev">
-      <h3>Tech Tools</h3>
-      <div class="content">
+      <div class="dev">
+        <h2>Tech Tools</h2>
         <img src="images/Web_Dev_Icons.png" alt="image" style="width:30%">
       </div>
-    </div>
+
+    <div class="projects-grid">
+      <div class="project-title">
+          <h2>My Projects</h2>
+        </div>
+      <div class="items-wrapper">
+        <div class="item-wrapper">
+          <div class="item-content-wrapper">
+            <div class="img-wrapper">
+              <img class="project-img" src="images/Capture.PNG" alt="rent an island">
+            </div>
+            <div class="text-wrapper">
+              <a href="https://rent-island.herokuapp.com/" target="_blank"><h4 class="project-title ">Rent An Island</h4></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="item-wrapper">
+          <div class="item-content-wrapper">
+            <div class="img-wrapper">
+              <img class="project-img"
+                  src="images/Capture1.PNG" alt="Easy Trip">
+            </div>
+            <div class="text-wrapper">
+              <a href="https://easy-trip-app.herokuapp.com/" target="_blank"><h4 class="project-title">Easy Trip</h4></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 </body>
 

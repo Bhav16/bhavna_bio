@@ -114,3 +114,13 @@ h1 {
 .title{
   margin-top: 20px;
 }
+
+.dev{
+  align-items: center;
+  margin-right: 70px;
+}
+
+.dev h3{
+  text-align: center;
+}
+

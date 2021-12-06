@@ -8,13 +8,14 @@ body {
   background-size: cover;
 }
 
-
+/* banner */
 .banner {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
 }
 
+/* navbar */
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -239,6 +240,37 @@ h2{
     visibility: visible;
     transform: translateY(0);
     transition-delay: 0.2s;
+}
+
+/* Footer */
+
+.footer{
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.contact{
+  color: white;
+}
+
+.myDiv{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.div{
+  padding: 25px;
+}
+
+.div i {
+  color: white;
+}
+
+.div p {
+  color: white;
 }
 
 @media (max-width: 960px) {

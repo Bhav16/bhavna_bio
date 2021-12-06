@@ -241,6 +241,37 @@ h2{
     transition-delay: 0.2s;
 }
 
+/* Footer */
+
+.footer{
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.contact{
+  color: white;
+}
+
+.myDiv{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.div{
+  padding: 25px;
+}
+
+.div i {
+  color: white;
+}
+
+.div p {
+  color: white;
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
